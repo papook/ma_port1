@@ -9,6 +9,14 @@ class MainPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    TextStyle grayBoxTextStyle = TextStyle(
+      color: Colors.white,
+      fontFamily: "Segoe UI",
+      fontWeight: FontWeight.bold,
+    );
+
+    Color darkBlue = Color.fromARGB(255, 23, 60, 105);
+
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
@@ -18,7 +26,7 @@ class MainPage extends StatelessWidget {
           ),
           centerTitle: true,
           leading: Icon(Icons.home),
-          backgroundColor: Color.fromARGB(255, 23, 60, 105),
+          backgroundColor: darkBlue,
         ),
         body: Container(
           color: Colors.white,
@@ -57,14 +65,7 @@ class MainPage extends StatelessWidget {
                     height: 100,
                     child: Align(
                       alignment: Alignment.bottomRight,
-                      child: Text(
-                        "TAMK",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontFamily: "Segoe UI",
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
+                      child: Text("TAMK", style: grayBoxTextStyle),
                     ),
                   ),
                   Container(
@@ -72,14 +73,7 @@ class MainPage extends StatelessWidget {
                     width: 100,
                     height: 200,
                     child: Center(
-                      child: Text(
-                        "Flutter!",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontFamily: "Segoe UI",
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
+                      child: Text("Flutter!", style: grayBoxTextStyle),
                     ),
                   ),
                   Container(
@@ -88,14 +82,7 @@ class MainPage extends StatelessWidget {
                     height: 100,
                     child: Align(
                       alignment: Alignment.bottomLeft,
-                      child: Text(
-                        "THWS",
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontFamily: "Segoe UI",
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
+                      child: Text("THWS", style: grayBoxTextStyle),
                     ),
                   ),
                 ],
@@ -104,7 +91,7 @@ class MainPage extends StatelessWidget {
                 margin: EdgeInsets.symmetric(horizontal: 40),
                 height: 200,
                 width: 300,
-                color: Color.fromARGB(255, 23, 60, 105),
+                color: darkBlue,
                 child: Image.asset("assets/thws-logo_vert_en_black.png"),
               ),
             ],
