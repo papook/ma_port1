@@ -100,6 +100,13 @@ class MainPage extends StatelessWidget {
                   ),
                 ],
               ),
+              Container(
+                margin: EdgeInsets.symmetric(horizontal: 40),
+                height: 200,
+                width: 300,
+                color: Color.fromARGB(255, 23, 60, 105),
+                child: Image.asset("assets/thws-logo_vert_en_black.png"),
+              ),
             ],
           ),
         ),
