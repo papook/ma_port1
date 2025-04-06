@@ -48,6 +48,58 @@ class MainPage extends StatelessWidget {
                   ),
                 ),
               ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    color: Color.fromARGB(255, 51, 51, 51),
+                    width: 100,
+                    height: 100,
+                    child: Align(
+                      alignment: Alignment.bottomRight,
+                      child: Text(
+                        "TAMK",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontFamily: "Segoe UI",
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ),
+                  Container(
+                    color: Color.fromARGB(255, 102, 102, 102),
+                    width: 100,
+                    height: 200,
+                    child: Center(
+                      child: Text(
+                        "Flutter!",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontFamily: "Segoe UI",
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ),
+                  Container(
+                    color: Color.fromARGB(255, 153, 153, 153),
+                    width: 100,
+                    height: 100,
+                    child: Align(
+                      alignment: Alignment.bottomLeft,
+                      child: Text(
+                        "THWS",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontFamily: "Segoe UI",
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ],
           ),
         ),
